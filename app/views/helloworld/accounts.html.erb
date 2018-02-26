@@ -1,0 +1,6 @@
+<h1>you are authenticated</h1>
+<p><%=session[:authenticated_user]%></p>
+
+<% if authorized? %>
+    <%=link_to 'logout', logout_path, method: :delete%>
+<% end %>

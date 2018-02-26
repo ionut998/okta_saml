@@ -1,0 +1,4 @@
+<%=link_to 'accounts (requires login)', accounts_path%>
+<% if authorized? %>
+  <%=link_to 'logout', logout_path, method: :delete%>
+<% end %>
